@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  employee_id: 1
+  position_id: 1
+  salary: 9.99
+  observation_date: 2013-09-15
+
+two:
+  employee_id: 1
+  position_id: 1
+  salary: 9.99
+  observation_date: 2013-09-15
