@@ -16,7 +16,6 @@ class CsvImporter
   end
 
   def import_row(row)
-    puts row
     who = Employee.find_or_create_by_name(row[0])
     what = Position.find_or_create_by_title(row[1])
     and_when = Employment.new(employee_id: who.id,
