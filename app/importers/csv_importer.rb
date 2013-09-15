@@ -16,8 +16,8 @@ class CsvImporter
   end
 
   def import_row(row)
-    who = Employee.find_or_create_by_name(row[0])
-    what = Position.find_or_create_by_title(row[1])
+    who = Employee.find_or_create_by(name: row[0])
+    what = Position.find_or_create_by(title: row[1])
     and_when = Employment.new(employee_id: who.id,
                               position_id: what.id,
                               salary: row[2].gsub(/[^0-9]/, "").to_i/100,
