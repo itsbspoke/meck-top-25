@@ -14,5 +14,5 @@ bundle exec rake db:migrate
 bundle exec rails dbconsole
 ```
 
-Ctrl+D will exit the rake db:console session
+Ctrl+D will exit the rails dbconsole session
 
