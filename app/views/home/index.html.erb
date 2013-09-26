@@ -1,0 +1,24 @@
+<h1>Mecklenburg County Employee Salary <strong>EXPOS&eacute;</strong></h1>
+
+<h2>Highest annual salaries</h2>
+
+<ol>
+<% @top_10_annual.each do |employment| %>
+  <li><%= employment.employee.name %>: 
+  <%= number_to_currency(employment.salary) %>
+  <%= employment.observation_date %>
+  </li>
+  <% end %>
+
+</ol>
+
+<h2>Highest lifetime draws</h2>
+
+<ol>
+<% @top_10_lifetime.each do |employee| %>
+  <li><%= employee.name %>: 
+  <%= number_to_currency(employee.lifetime_salary) %>
+  </li>
+  <% end %>
+
+</ol>
